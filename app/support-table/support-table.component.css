@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1500px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .fa {
+    cursor: pointer;
+    margin-left: 5px;
+    color: #555; /* Default color */
+    transition: color 0.3s ease;
+  }
+  
+  .fa-icon:hover {
+    color: #000; /* Change color on hover */
+  }
+
+  .fa-icon.asc:before {
+    content: "\f0de"; /* Font Awesome sort-asc icon */
+  }
+  
+  .fa-icon.desc:before {
+    content: "\f0dd"; /* Font Awesome sort-desc icon */
+  }
+  
+  .fa-icon.none:before {
+    content: "\f0dc"; /* Font Awesome sort icon (default) */
+  }
+  
